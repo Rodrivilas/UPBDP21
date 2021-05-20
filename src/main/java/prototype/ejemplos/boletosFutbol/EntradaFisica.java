@@ -123,7 +123,7 @@ public class EntradaFisica implements IEntradaFutbol {
 
     public void showInformation(){
         System.out.println("***********************");
-        System.out.println("equipoVisitante: "+equipoVisitante);
+        System.out.println("Tamaño: "+equipoVisitante);
         System.out.println("equipoLocal: "+equipoLocal);
         System.out.println("numeroAsiento: "+numeroAsiento);
         System.out.println("fecha: "+fecha);
