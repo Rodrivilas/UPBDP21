@@ -15,6 +15,7 @@ public class HeladoCrema implements IHelado{
 
     @Override
     public void crear() {
+        System.out.println("*************************");
         System.out.println("Helado De Crema - tamano: "+tamano);
         System.out.println("Helado De Crema - forma: "+forma);
         fruta.showInfo();

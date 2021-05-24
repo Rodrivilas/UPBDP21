@@ -13,6 +13,7 @@ public class HeladoAgua implements IHelado{
 
     @Override
     public void crear() {
+        System.out.println("*************************");
         System.out.println("Helado De Agua - tamano: "+tamano);
         System.out.println("Helado De Agua - forma: "+forma);
         fruta.showInfo();

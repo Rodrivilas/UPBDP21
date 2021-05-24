@@ -14,6 +14,7 @@ public class HeladoMixto implements IHelado{
 
     @Override
     public void crear() {
+        System.out.println("*************************");
         System.out.println("Helado Mixto - tamano: "+tamano);
         System.out.println("Helado Mixto - forma: "+forma);
         System.out.println("Helado Mixto - costo: "+costo);

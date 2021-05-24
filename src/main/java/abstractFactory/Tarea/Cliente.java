@@ -16,32 +16,32 @@ public class Cliente {
         h3.setFruta(new Fruta("manzana","manzana","10","medianos"));
         h3.crear();
 
-        HeladoCrema hc1=(HeladoCrema) FactoryHelado.make(FactoryHelado.tipohelado.HELADOAGUA);
+        HeladoCrema hc1=(HeladoCrema) FactoryHelado.make(FactoryHelado.tipohelado.HELADOCREMA);
         hc1.crear();
 
-        HeladoCrema hc2=(HeladoCrema) FactoryHelado.make(FactoryHelado.tipohelado.HELADOAGUA);
+        HeladoCrema hc2=(HeladoCrema) FactoryHelado.make(FactoryHelado.tipohelado.HELADOCREMA);
         hc2.setTamano("grande");
         hc2.setForma("canasta");
         hc2.setBase(new Base("canasta","grande","plastico","15"));
         hc2.crear();
 
-        HeladoCrema hc3=(HeladoCrema) FactoryHelado.make(FactoryHelado.tipohelado.HELADOAGUA);
+        HeladoCrema hc3=(HeladoCrema) FactoryHelado.make(FactoryHelado.tipohelado.HELADOCREMA);
         hc3.setForma("cono");
         hc3.setBase(new Base("cono","grande","plastico","10"));
         hc3.setCrema(new Crema("chocolate","33","PIL"));
         hc3.crear();
 
-        HeladoMixto hm1=(HeladoMixto) FactoryHelado.make(FactoryHelado.tipohelado.HELADOAGUA);
+        HeladoMixto hm1=(HeladoMixto) FactoryHelado.make(FactoryHelado.tipohelado.HELADOMIXTO);
         hm1.crear();
 
-        HeladoMixto hm2=(HeladoMixto) FactoryHelado.make(FactoryHelado.tipohelado.HELADOAGUA);
+        HeladoMixto hm2=(HeladoMixto) FactoryHelado.make(FactoryHelado.tipohelado.HELADOMIXTO);
         hm2.setTamano("XL");
         hm2.setForma("Canasta");
         hm2.setBase(new Base("canasta","XL","galleta de chocolate","40"));
         hm2.setCrema(new Crema("dulce de leche","33","Delizia"));
         hm2.crear();
 
-        HeladoMixto hm3=(HeladoMixto) FactoryHelado.make(FactoryHelado.tipohelado.HELADOAGUA);
+        HeladoMixto hm3=(HeladoMixto) FactoryHelado.make(FactoryHelado.tipohelado.HELADOMIXTO);
         hm3.setTamano("S");
         hm3.setForma("cono");
         hm3.setBase(new Base("cono","S","galleta de chocolate","20"));
