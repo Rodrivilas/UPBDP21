@@ -39,5 +39,6 @@ public class Cliente {
         listaPersonas.add(new Persona("Javier", "10298344", "29"));
 
         o.restoreFromMemento(bd.getMemento(0));
+
     }
 }
