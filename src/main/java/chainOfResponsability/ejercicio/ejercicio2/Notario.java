@@ -19,6 +19,7 @@ public class Notario implements ISoftware{
             System.out.println("*Solicitando certificado de nacimiento...");
             System.out.println("*Certificado encontrado.");
             persona.setCertificadoDeNacimiento(true);
+
             if (persona.isPagoAlBanco() && persona.isCertificadoDeNacimiento() && persona.isFicha()) {
                 ResponsableCarnetizacion responsableCarnetizacion = new ResponsableCarnetizacion();
                 responsableCarnetizacion.criteriaHandler(persona);

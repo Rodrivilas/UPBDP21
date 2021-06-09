@@ -16,8 +16,15 @@ public class AyudaAlCliente implements ISoftware{
     @Override
     public void criteriaHandler(Persona persona) {
         if(!persona.isFicha()){
-            System.out.println("*No podemos ayudarle, le faltan requisitos:");
-            persona.showInfo();
+            System.out.println("*No podemos ayudarle, le falta sacar ficha:");
+            System.out.println("*Sacando ficha...");
+            persona.setFicha(true);
+            if (persona.isPagoAlBanco() && persona.isCertificadoDeNacimiento() && persona.isFicha()) {
+                ResponsableCarnetizacion responsableCarnetizacion = new ResponsableCarnetizacion();
+                responsableCarnetizacion.criteriaHandler(persona);
+            }else{
+                this.next.criteriaHandler(persona);
+            }
         }else{
             this.next.criteriaHandler(persona);
         }
