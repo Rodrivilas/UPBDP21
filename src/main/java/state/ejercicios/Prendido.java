@@ -9,10 +9,17 @@ public class Prendido implements IStateComputadora{
     @Override
     public void handler(Computadora computadora) {
         System.out.println("*Computadora encendida");
-        for(String r: arrayProgramas) {
+        System.out.println("*Programas abiertos:");
+        printArray(v);
 
-            System.out.println(r);
+        computadora.setConsumoMemoriaRam(v);
+        computadora.setConsumoEnCPU(v);
+        computadora.showInfo();
+    }
 
+    public void printArray(int n){
+        for(int i=0; i<n ;i++){
+            System.out.println(arrayProgramas[(int)(Math.random()*n+1)]);
         }
     }
 }
