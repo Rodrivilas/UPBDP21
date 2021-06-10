@@ -9,6 +9,10 @@ public class Prendido implements IStateComputadora{
     @Override
     public void handler(Computadora computadora) {
         System.out.println("*Computadora encendida");
+        for(String r: arrayProgramas) {
 
+            System.out.println(r);
+
+        }
     }
 }
