@@ -19,7 +19,7 @@ public class Cabo implements ICuerpoEjercito{
             System.out.println("Cabo - Lavando el piso");
             persona.showInfo();
         }else{
-            this.next.orden(persona);
+            System.out.println("NO existe esa orden en la cadena de mando");
         }
     }
 }
